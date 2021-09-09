@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"cd api && node app.js\" \"cd front && npm run start\"",
-    "iAll": "concurrently \"npm install\" \"cd api && npm install\" \"cd front && npm install\""
+    "iAll": "npm i && cd api && npm i && cd ../front && npm i\""
   },
   "repository": {
     "type": "git",
