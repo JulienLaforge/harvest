@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node api/app.js"
+    "dev": "concurrently \"cd api && node app.js\" \"cd front && npm run start\"",
+    "iAll": "concurrently \"npm install\" \"cd api && npm install\" \"cd front && npm install\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/JulienLaforge/harvest/issues"
   },
-  "homepage": "https://github.com/JulienLaforge/harvest#readme"
+  "homepage": "https://github.com/JulienLaforge/harvest#readme",
+  "dependencies" : {
+    "concurrently": "^6.2.1"
+  }
 }
