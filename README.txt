@@ -1,1 +1,3 @@
-Mon fichier readme
+# Commandes de lancement des serveurs
+## Développement
+`npm run dev`
